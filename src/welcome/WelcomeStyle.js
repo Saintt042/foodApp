@@ -62,8 +62,6 @@ export const Container = styled.div`
   // 	padding: 20px 3%;
   // }
   @media screen and (max-width: 660px) {
-    ul {
-      display: none;
-    }
+    
   }
 `;
