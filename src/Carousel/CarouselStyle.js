@@ -23,6 +23,8 @@ export const Container = styled.section`
     bottom: 0;
   }
   @media screen and (max-width: 815px) {
-    
+    .wrapper {
+      height: 600px;
+     } 
   }
 `;

@@ -27,9 +27,9 @@ export const Container = styled.div`
       cursor: pointer;
       :hover {
         box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
-      transform: scale(1.05);
+        -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+        transform: scale(1.05);
       }
     }
   }
@@ -39,7 +39,7 @@ export const Container = styled.div`
     font-size: clamp(1rem, 4vw, 1.75rem);
     margin-top: 30px;
     margin-bottom: 30px;
-   text-align: center;
+    text-align: center;
   }
 
   h1 {
@@ -50,34 +50,39 @@ export const Container = styled.div`
     font-size: clamp(2rem, 4vw, 3.75rem);
     text-align: center;
     span {
-      color: #B8B8B8;
+      color: #b8b8b8;
       font-size: clamp(2rem, 4vw, 3.75rem);
     }
   }
 
   .butt {
-    color: #B8B8B8;
+    color: #b8b8b8;
     text-align: center;
     top: 10px;
   }
   @media screen and (max-width: 815px) {
-  	h1 {
+    margin: 2rem;
+
+    h1 {
       max-width: 100%;
       align-items: center;
     }
 
     p {
-      max-width: 100%;
+      max-width: 95%;
       align-items: center;
     }
 
     ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      li {
+        width: 200px;
+        height: 60px;
+      }
     }
   }
   @media screen and (max-width: 660px) {
-    
   }
 `;
