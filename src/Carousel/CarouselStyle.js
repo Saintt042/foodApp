@@ -24,7 +24,7 @@ export const Container = styled.section`
   }
   @media screen and (max-width: 815px) {
     .wrapper {
-      height: 600px;
+      max-height: 600px;
      } 
   }
 `;
