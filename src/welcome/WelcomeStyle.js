@@ -26,17 +26,20 @@ export const Container = styled.div`
       font-size: 30px;
       cursor: pointer;
       :hover {
-        color: blue;
-        transform: scale(1.02);
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+      transform: scale(1.05);
       }
     }
   }
 
   p {
     color: white;
-    font-size: 25px;
+    font-size: clamp(1rem, 4vw, 1.75rem);
     margin-top: 30px;
     margin-bottom: 30px;
+   text-align: center;
   }
 
   h1 {
@@ -44,26 +47,36 @@ export const Container = styled.div`
     color: white;
     font-style: normal;
     font-weight: 400;
-    font-size: 55px;
-    line-height: 75px;
+    font-size: clamp(2rem, 4vw, 3.75rem);
+    text-align: center;
     span {
-      color: red;
-      font-size: 60px;
+      color: #B8B8B8;
+      font-size: clamp(2rem, 4vw, 3.75rem);
     }
   }
 
   .butt {
-    color: red;
+    color: #B8B8B8;
     text-align: center;
     top: 10px;
-    :hover {
-      color: blue;
-      transform: scale(1.02);
+  }
+  @media screen and (max-width: 815px) {
+  	h1 {
+      max-width: 100%;
+      align-items: center;
+    }
+
+    p {
+      max-width: 100%;
+      align-items: center;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
     }
   }
-  // @media screen and (max-width: 815px) {
-  // 	padding: 20px 3%;
-  // }
   @media screen and (max-width: 660px) {
     
   }
