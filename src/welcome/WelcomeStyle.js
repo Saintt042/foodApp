@@ -21,7 +21,6 @@ export const Container = styled.div`
       border: 1px solid black;
       width: 250px;
       height: 80px;
-      background: #ffffff;
       border-radius: 5px;
       font-size: 30px;
       cursor: pointer;
