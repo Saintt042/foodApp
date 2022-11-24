@@ -15,6 +15,9 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-evenly;
     li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border: 1px solid black;
       width: 250px;
       height: 80px;

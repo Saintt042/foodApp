@@ -1,4 +1,4 @@
-import a from '../resources/bg1.svg';
+import a from '../resources/bg1.png';
 
 
 

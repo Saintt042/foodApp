@@ -1,23 +1,76 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
-	// border: 1px solid red;
-	margin: 20px 0 50px 0;
-	
-	h1 {
-    border-bottom: 4px solid #F1D5BB;
+  margin: 20px 0 50px 0;
+
+  h1 {
+    border-bottom: 4px solid #f1d5bb;
     position: absolute;
     width: 306px;
     height: 63px;
     left: 243px;
     top: 23px;
-    font-family: 'Mulish';
+    font-family: "Mulish";
     font-style: normal;
     font-weight: 400;
     font-size: 50px;
     line-height: 63px;
     color: #000000;
+  }
+
+  .foodies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    max-width: 1095px;
+    left: 243px;
+    top: 154px;
+  }
+
+  .loadmore {
+    position: absolute;
+    width: 194px;
+    height: 54px;
+    left: 676px;
+    top: 841px;
+    background: #000000;
+    border-radius: 2px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    :hover {
+      box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+      transform: scale(1.05);
     }
-	@media screen and (max-width: 660px) {
+  }
+  @media screen and (max-width: 815px) {
+    h1 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      left: 2px;
+      top: 5rem;
     }
+
+    .foodies {
+      max-width: 1095px;
+      left: 0;
+      top: 25rem;
+    }
+
+    .loadmore {
+      left: 25%;
+      top: 165rem;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .foodies {
+      justify-content: center;
+    }
+  }
 `;
