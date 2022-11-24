@@ -35,7 +35,7 @@ export const Container = styled.div`
 
   p {
     color: white;
-    font-size: clamp(1rem, 4vw, 1.75rem);
+    font-size: clamp(1.2rem, 4vw, 1.95rem);
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
@@ -60,7 +60,7 @@ export const Container = styled.div`
     top: 10px;
   }
   @media screen and (max-width: 815px) {
-    margin: 2rem;
+    margin: 4rem;
 
     h1 {
       max-width: 100%;
