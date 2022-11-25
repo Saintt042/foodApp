@@ -4,6 +4,7 @@ export const Container = styled.div`
   position: absolute;
   left: 893px;
   width: 443px;
+  max-width: 1023px;
   top: 135px;
   gap: 30px;
 
@@ -92,11 +93,17 @@ cursor: pointer;
   @media screen and (max-width: 815px) {
     position: relative;
     left: 0;
-    width: 385px;
+    width: 100%;
+    max-width: 815px;
     top: 130rem;
     align-items: center;
   text-align: center;
   
+
+  .subtotal,
+  .promo {
+    width: 100%;
+  }
     h3,
     h4 {
   font-size: 30px;
@@ -112,6 +119,6 @@ cursor: pointer;
   
 .typist {
   width: 325px;
-font-size: 20px;
+  font-size: 20px;
 }
 `;
