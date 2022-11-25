@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { Container } from './NavbarStyle';
 import logo from '../resources/loogos.PNG';
 import { FaHome } from 'react-icons/fa';
@@ -13,9 +14,14 @@ const Navbar = () => {
       <div className="navbar">
           <img src={logo} alt="zubis" />
         <div className="icons">
-          <FaHome id='icon' />
+         <Link to="/">
+         <FaHome id='icon' />
+         </Link>
           <GiKnifeFork id='icon' />
+          <Link to="/cart">
           <MdOutlineShoppingCart id='icon' />
+         </Link>
+          
           <GoLocation id='icon' />
           <HiOutlineLogout id='icon' />
         </div>

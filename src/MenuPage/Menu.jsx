@@ -15,35 +15,43 @@ const Menu = () => {
   const menuList = [  
     {
       icon: a,
-      name: "Smashed Ava",
+      name: "Smashed Avo",
+      price: 20.00,
     },
     {
       icon: b,
       name: "Ying and Yang",
+      price: 10.00,
     },
     {
       icon: c,
       name: "Pancake",
+      price: 25.00,
     },
     {
       icon: d,
       name: "Huevos Rancheros",
+      price: 15.00,
     },
     {
       icon: e,
       name: "Rancheros (Tofu)",
+      price: 25.00,
     },
     {
       icon: f,
       name: "Breakkie Roll",
+      price: 30.00,
     },
     {
       icon: g,
       name: "Breakkie Roll",
+      price: 35.00,
     },
     {
       icon: h,
       name: "Burrito",
+      price: 100.00,
     }
   ];
   return (
@@ -58,13 +66,10 @@ const Menu = () => {
 			</section>
       
        <Navbar />
-
-      
-       <div className="lasts">
         
        <button className='loadmore'> LOAD MORE </button>
         <Footer />
-       </div>
+       
 
       </div>
     </Container>

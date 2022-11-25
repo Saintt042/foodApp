@@ -1,7 +1,7 @@
 import { Container } from './CardStyles';
 
 
-const Card = ({ icon, name }) => {
+const Card = ({ icon, name, price }) => {
 	return (
 		<Container>
 			<figure>
@@ -11,6 +11,7 @@ const Card = ({ icon, name }) => {
 			<section className='info'>
 				<div>
 					<p> { name } </p>
+					<p> { price } </p>
 				</div>
 			</section>
 		</Container>
